@@ -441,7 +441,7 @@ export const UIModeView: React.FC<{}> = ({
       </div>}
       sidebar={<div className='vbox ui-mode-sidebar'>
         <Toolbar noShadow={true} noMinHeight={true}>
-          <img src='playwright-logo.svg' alt='Playwright logo' />
+          <img src='iden-logo.svg' alt='Iden logo' />
           <div className='section-title'>Playwright</div>
           <ToolbarButton icon='refresh' title='Reload' onClick={() => reloadTests()} disabled={isRunningTest || isLoading}></ToolbarButton>
           <div style={{ position: 'relative' }}>
