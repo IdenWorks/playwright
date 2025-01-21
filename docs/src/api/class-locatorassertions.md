@@ -1313,7 +1313,7 @@ await Expect(locator).ToHaveAccessibleNameAsync("Save to disk");
 
 ### param: LocatorAssertions.toHaveAccessibleName.name
 * since: v1.44
-- `name` <[string]|[RegExp]|[Array]<[string]|[RegExp]>>
+- `name` <[string]|[RegExp]>
 
 Expected accessible name.
 
@@ -2241,8 +2241,7 @@ assertThat(page.locator("body")).matchesAriaSnapshot("""
 
 ## async method: LocatorAssertions.toMatchAriaSnapshot#2
 * since: v1.50
-* langs:
-  - alias-java: matchesAriaSnapshot
+* langs: js
 
 Asserts that the target element matches the given [accessibility snapshot](../aria-snapshots.md).
 
@@ -2275,13 +2274,8 @@ assertThat(page.locator("body")).matchesAriaSnapshot(new LocatorAssertions.Match
 * langs: js
 - `name` <[string]>
 
-Name of the snapshot to store in the snapshot folder corresponding to this test. Generates ordinal name if not specified.
-
-### option: LocatorAssertions.toMatchAriaSnapshot#2.path
-* since: v1.50
-- `path` <[string]>
-
-Path to the YAML snapshot file.
+Name of the snapshot to store in the snapshot (screenshot) folder corresponding to this test.
+Generates sequential names if not specified.
 
 ### option: LocatorAssertions.toMatchAriaSnapshot#2.timeout = %%-js-assertions-timeout-%%
 * since: v1.50
